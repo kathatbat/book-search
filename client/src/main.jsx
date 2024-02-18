@@ -10,11 +10,7 @@ import SavedBooks from './pages/SavedBooks';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: (
-      <ApolloProvider client={ApolloClient}>
-        <App />
-      </ApolloProvider>
-    ),
+    element: <App />,
     errorElement: <h1 className='display-2'>Wrong page!</h1>,
     children: [
       {
